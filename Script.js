@@ -2,7 +2,7 @@ let questionsArray = []; // this is a global array that will contain the questio
 let urlHelper = [];//urlHelper
 var type; // type of questions global variable.
 var Score=0; // Total Score in real time.
-var ArrHearts=['❤️','❤️','❤️','❤️'];// Array of Hearts.// Total Hearts of Game / Point / HP. 
+var ArrHearts=['❤️','❤️','❤️'];// Array of Hearts.// Total Hearts of Game / Point / HP. 
 var questionNum=0; // the number of question in real time.
 // this function let the elements in your html to load first.
 $(document).ready(function () { 
@@ -34,7 +34,7 @@ function getAmount(){// return type Value from html
 }
 async function start(){ 
 	questionNum=0;
-	var ArrHearts=['❤️','❤️','❤️','❤️'];
+	var ArrHearts=['❤️','❤️','❤️'];
 	Score=0;
 	var amount=getAmount();// amount = the number of questions you want to recive
 	var cat=getCategoriesValue(); // category = the category of the questions 9-32

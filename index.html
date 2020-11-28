@@ -5,8 +5,8 @@
 	
     <!--  Meta  -->
     <meta charset="UTF-8" />
-    <title>ex01_205848278_300961323</title> <!-- You can enter the application title here -->
-    
+    <title>Trivia Game _ by BenNoioff</title> <!-- You can enter the application title here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--  Styles  -->
     <link rel="stylesheet" href=""> <!--the reference to your Css should be inserted here -->
     <link rel="stylesheet" href="https://use.fontawesome.com/f24533ba21.css">
@@ -24,68 +24,63 @@
 	 <script type="text/javascript" src="Script.js"> </script> <!--the reference to your JavaScript code should be inserted here under src -->
 	
 </head>
-<body>
-    <!-- The application HTML should appear here. -->
 
-    <div class="container">
-       <div class="form-group">
+<body class="text-center">
+<!-- The application HTML should appear here. -->
+<div class="container">
+    <div class="form-group">
 
-              <label for="catgories">
-                  <b>catgories</b>
-                  <select  class="form-control" id="catgories">
-                      <option value="18">ברירת מחדל</option>
-                    </select>
-                </label>
-        </div>  
-            <div class="form-group">
-                <b>amount</b>
-                <input  class="form-control" type="number" name="amount" id="amount" class="form-control __web-inspector-hide-shortcut__" min="1" max="50" value="5">
-            </div>
-            
-            <div class="form-group">
-                 <label for="type">
-                     <b>type</b>
-                     <select id="type"  class="form-control" >
-                         <option value="multiple">Multiple Choice</option>
-                         <option value="boolean">True / False</option>
+           <label for="catgories">
+               <b>catgories</b>
+               <select  class="form-control" id="catgories">
+                   <option value="18">ברירת מחדל</option>
+                 </select>
+             </label>
+     </div>  
+         <div class="form-group">
+             <b>amount</b>
+             <input  class="form-control" type="number" name="amount" id="amount" class="form-control __web-inspector-hide-shortcut__" min="1" max="50" value="5">
+         </div>
+         
+         <div class="form-group">
+              <label for="type">
+                  <b>type</b>
+                  <select id="type"  class="form-control" >
+                      <option value="multiple">Multiple Choice</option>
+                      <option value="boolean">True / False</option>
+                  </select>
+              </label>
+         </div>
+         <div class="form-group">    
+             <label for="difficulty">
+                  <b>difficulty</b>
+                  <select  class="form-control" id="difficulty">
+                      <option value='hard'>hard</option>
+                      <option value='medium'>medium</option>
+                      <option value='easy'>easy</option>
                      </select>
-                 </label>
-            </div>
-            <div class="form-group">    
-                <label for="difficulty">
-                     <b>difficulty</b>
-                     <select  class="form-control" id="difficulty">
-                         <option value='hard'>hard</option>
-                         <option value='medium'>medium</option>
-                         <option value='easy'>easy</option>
-                        </select>
-                 </label>
-            </div>
-            <button type="submit" class= "btn btn-success" onclick="start()">start</button>
-        </div>
-   
-  
-        
-        <!--  after start button  -->
-        <div  class="container">
-            
-            <br>
-                <div>
-                    <h2  id="question"></h2>
-                </div>
-            <br>
-                 <div id="answers">
-                 </div>
-            <br>
-                 <div id="heart">
-                </div>
-            <br>
-            
-                 <h3 id="score"></h3>
-                
+              </label>
+         </div>
+         <button type="submit" class= "btn btn-success" onclick="start()">start</button>
+     </div>
 
-        </div>
+     <br>
 
-        
+     <div class="container">
+
+            <h1 id="question"> </h1>
+            <br>
+            <div id="answers"> </div>
+            <br>
+            <h2 id="score">score: </h2>
+            <br>
+            <span id="heart"></span>
+            <br>
+            <br>
+     </div>
+
+
+
+
 </body>
 </html>
